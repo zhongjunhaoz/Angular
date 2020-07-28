@@ -1,0 +1,9 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4><!---使用了 currency 管道将 product.price 从数字转换为货币字符串。管道是一种可以在 HTML 模板中转换数据的方法。-->
+  <p>{{ product.description }}</p>
+
+  <button (click)="addToCart(product)">购买</button>
+</div>
