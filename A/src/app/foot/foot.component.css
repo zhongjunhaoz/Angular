@@ -1,0 +1,18 @@
+.content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.a,.b,.c{
+    flex:1;
+}
+.a{
+    background-color: #000000;
+}
+.b{
+    background-color: green;
+}
+.c{
+    background-color: red;
+}
