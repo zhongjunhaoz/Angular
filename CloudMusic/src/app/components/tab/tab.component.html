@@ -1,0 +1,5 @@
+<div class="tab">
+    <span routerLink="/recommend" (click)="changeRec()" [class]="isRecommendSelected ?'tab-item-isSelected':'tab-item'">推荐</span>
+    <span routerLink="/rank" (click)="changeRank()" [class]="isRankSelected ?'tab-item-isSelected':'tab-item'">排行</span>
+    <span routerLink="/search" (click)="changeSelect()" [class]="isSearchSelected ?'tab-item-isSelected':'tab-item'">搜索</span>
+</div>

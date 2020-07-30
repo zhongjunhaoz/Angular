@@ -1,0 +1,11 @@
+<div class="songsheet">
+    <div class="title">推荐MV</div>
+    <div class="lists-content">
+        <div class="lists" *ngFor="let item of MV; let i = index">
+            <img [src]="item.img" />
+            <span class="text">
+                {{item.songer}} - {{item.name}}
+            </span>
+        </div>
+    </div>
+</div>

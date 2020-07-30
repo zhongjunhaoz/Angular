@@ -1,0 +1,22 @@
+img {
+    border-radius: 3px;
+  }
+  .rank-song {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 12px;
+  }
+
+  .songlist {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .rank-item {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
