@@ -1,0 +1,13 @@
+<div>
+    <!-- 搜索框 -->
+    <input type="text" placeholder="搜索歌曲，歌手" class="searchInput" (input)="getSearchValue">
+
+    <!-- 实时搜索建议列表 @change="search" -->
+    <div 
+    class="search_suggest_result"
+    *ngFor="let item of searchSuggestItem; let i = index"
+    >
+        <span class="text" (click)="getSuggestName(item)">{{item}}</span>
+    </div>
+</div>
+<!-- 实时搜索建议列表的v-show -->

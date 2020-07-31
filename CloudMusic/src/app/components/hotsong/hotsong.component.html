@@ -1,0 +1,8 @@
+<div>
+    <div class="title">
+        热门搜索
+    </div>
+    <div class="hot_key_box" *ngFor="let item of hotSongsList; let i = index">
+        <span class="hot_keys_box_item" (click)="getItemVal(item)">{{ item }}</span>
+    </div>
+</div>

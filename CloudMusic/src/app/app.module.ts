@@ -17,6 +17,8 @@ import { Rank1Component } from './components/rank/rank1/rank1.component';
 import { Rank2Component } from './components/rank/rank2/rank2.component';
 import { Rank3Component } from './components/rank/rank3/rank3.component';
 import { Rank4Component } from './components/rank/rank4/rank4.component';
+import { SearchinputComponent } from './components/searchinput/searchinput.component';
+import { HotsongComponent } from './components/hotsong/hotsong.component';
 // import { Rank4Component } from './components/rank/rank4/rank4.component';
 // import { Rank5Component } from './components/rank/rank5/rank5.component';
 // import { Rank6Component } from './components/rank/rank6/rank6.component';
@@ -37,6 +39,8 @@ import { Rank4Component } from './components/rank/rank4/rank4.component';
     Rank2Component,
     Rank3Component,
     Rank4Component,
+    SearchinputComponent,
+    HotsongComponent,
     // Rank4Component,
     // Rank5Component,
     // Rank6Component
