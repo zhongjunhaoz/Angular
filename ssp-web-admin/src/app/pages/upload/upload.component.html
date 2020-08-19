@@ -1,0 +1,72 @@
+<div class="bread-box">
+    <app-breadcrumb class="bread-box-bread"></app-breadcrumb>
+    <button nz-button nzType="primary" class="bread-box-button" (click)="goBack()">返回</button>
+</div>
+
+
+<nz-card class="formCard">
+    <h1 class="title">爱四院，随手拍，请反馈您上报的问题。</h1>
+    <div class="feedBackBox">
+        <div class="feedBack-title">
+            <i class="ii">*</i>反馈内容：
+        </div>
+
+        <div class="feedBack-textarea">
+            <textarea rows="6" placeholder="请填写您需要反馈的问题" nz-input style="width: 100%;height: 100%;"
+                [(ngModel)]="areaVal"></textarea>
+        </div>
+    </div>
+    <div class="updataImgBox feedBackBox">
+        <div class="updataImgBox-title feedBack-title">
+            照片：
+        </div>
+
+        <div class="updataImgBox-updata feedBack-textarea">
+
+            <nz-upload nzListType="picture-card" [nzAction]='' nzName='file' [(nzFileList)]="fileList"
+                [nzShowButton]="fileList.length < 5" [nzPreview]="handlePreview">
+                <i nz-icon nzType="plus"></i>
+                <div class="ant-upload-text">上传</div>
+            </nz-upload>
+
+            <nz-modal [nzVisible]="previewVisible" [nzContent]="modalContent" [nzFooter]="null"
+                (nzOnCancel)="previewVisible = false">
+                <ng-template #modalContent>
+                    <img [src]="previewImage" [ngStyle]="{ width: '100%' }" />
+                </ng-template>
+            </nz-modal>
+
+
+            <div class="updata-text">请上传您的照片，不超过5张。</div>
+        </div>
+    </div>
+
+
+
+    <div class="feedBackBox">
+        <div class="feedBack-title">
+            <i class="ii">*</i>联系方式：
+        </div>
+        <div class="inputPhone">
+            <input nz-input nzSize="default" style="width: 60%;" [(ngModel)]="phoneVal" />
+        </div>
+    </div>
+
+
+    <p class="warning"><i nz-icon nzType="info-circle" nzTheme="outline"></i>为保证您能顺利接受通知，请填写真实的手机号，您的信息将受到保护。</p>
+
+    <div class="radioBox">
+        <span>上传方式：</span>
+        <nz-radio-group [(ngModel)]="radioValue">
+            <label nz-radio nzValue="A">实名上报</label>
+            <label nz-radio nzValue="B">匿名上报</label>
+        </nz-radio-group>
+        <p class="warning"><i nz-icon nzType="info-circle" nzTheme="outline"></i>匿名上报将不显示您的信息，手机号只用于接收反馈信息。</p>
+    </div>
+
+    <div class="button">
+        <button nz-button nzType="primary" class="button-left" (click)="upload()">确认</button>
+        <button nz-button nzType="default" class="button-right" (click)="goBack()">取消</button>
+    </div>
+
+</nz-card>

@@ -1,0 +1,22 @@
+<ul nz-menu nzMode="inline">
+    <li nz-submenu [nzTitle]="titleSee" nzIcon="mail" nzOpen >
+      <ul>
+        <li nz-menu-item (click)="goPhoto($event)" >随手拍</li>
+      </ul>
+    </li>
+    <li nz-submenu [nzTitle]="titleHandle" nzIcon="appstore">
+      <ul>
+        <li nz-menu-item (click)="goOrders($event)" >派单</li>
+        <li nz-menu-item (click)="goOrderHandle($event)" >派单处理</li>
+      </ul>
+    </li>
+    <li nz-submenu [nzTitle]="titleManage" nzIcon="setting">
+      <ul>
+        <li nz-menu-item (click)="goAccManagement($event)" >账号管理</li>
+        <li nz-menu-item (click)="goPerOrgenize($event)" >人员组织</li>
+        <li nz-menu-item (click)="goRoleManagement($event)" >角色管理</li>
+        <li nz-menu-item (click)="goResourceManagement($event)" >资源管理</li>
+        <li nz-menu-item (click)="goHandle($event)" >操作处理</li>
+      </ul>
+    </li>
+  </ul>

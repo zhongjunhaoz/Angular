@@ -1,0 +1,49 @@
+<div class="searchBox">
+    <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+        <input #searchVal type="text" nz-input placeholder="请输入用户名执行搜索" class="search"/>
+    </nz-input-group>
+    <ng-template #suffixIconButton>
+        <button nz-button nzType="primary" nzSearch class="search" (click)="search(searchVal.value)"><i nz-icon nzType="search"></i></button>
+    </ng-template>    
+</div>
+
+<nz-table #borderedTable [nzBordered]="tableParam.border" [nzPageSize]="tableParam.pageSize"
+    [nzShowSizeChanger]="tableParam.showPageSizeChanger" [nzShowPagination]="tableParam.showPagination"
+    [nzShowQuickJumper]="tableParam.showQuickJump" [nzHideOnSinglePage]="tableParam.hideOnSinglePage"
+    [nzData]="dataSet" [nzScroll]="{ y: '60vh' }">
+    <thead>
+        <tr>
+            <th [nzLeft]="theadParam.left"><span>序号</span></th>
+            <th><span>用户名</span></th>
+            <th><span>昵称</span></th>
+            <th><span>密码</span></th>
+            <th><span>用户手机</span></th>
+            <th><span>用户来源</span></th>
+            <th><span>用户状态</span></th>
+            <th><span>备注</span></th>
+            <th [nzRight]="theadParam.right"><span>登陆时间</span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of borderedTable.data; let i = index">
+            <td ><span class="tdHeigth">{{ i+1 }}</span></td>
+            <td class="tdHeigth"><span>{{ data.name }}</span></td>
+            <td class="tdHeigth"><span>{{ data.nickName }}</span></td>
+            <td class="tdHeigth"><span>{{ data.password }}</span></td>
+            <td class="tdHeigth"><span>{{ data.phoneNum }}</span></td>
+            <td class="tdHeigth"><span>{{ data.userComeFrom | change}}</span></td>
+            <td class="tdHeigth"><span>{{ data.userState | change }}</span></td>
+            <td class="tdHeigth"><span>{{ data.mark }}</span></td>
+            <td class="tdHeigth"><span>{{ data.signInTime }}</span></td>
+        </tr>
+    </tbody>
+</nz-table>
+
+<nz-card class="pagination">
+    <!-- 共{{totalItem}}条数据 -->
+    <nz-pagination  [nzTotal]="totalItem" nzShowSizeChanger [nzPageSize]="10" nzShowQuickJumper
+        [nzResponsive]=true [nzShowTotal]="totalItem" (nzPageIndexChange)="changePageIndex($event)" 
+        (nzPageSizeChange)="changePageSize($event)" [nzShowTotal]="totalTemplate"></nz-pagination>
+
+        <!-- <ng-template #totalTemplate let-total> Total {{ totalItem }} items </ng-template> -->
+</nz-card>

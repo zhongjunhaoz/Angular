@@ -1,0 +1,24 @@
+.pagination {
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.ant-table-tbody>tr>td {
+    padding: 6px;
+}
+.ant-table {
+    font-size: 12px;
+}
+.ant-table table {
+    text-align: center;
+}
+.searchBox {
+    width: 40%;
+    margin-bottom: 1vh;
+}
+.search {
+    height: 40px;
+}
