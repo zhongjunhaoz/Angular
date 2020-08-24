@@ -1,0 +1,398 @@
+.navBox {
+    background-color:#F5F5F5;
+    width: 100%;
+    height: 4vh;
+    display: flex;
+}
+.navBox_left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBox_right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.text {
+    font-size: 12px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.cnland {
+    color: #000000;
+    position: relative;
+}
+.icon {
+    font-size: 6px;
+    margin-right: 4px;
+}
+.login {
+    color: #F22E00;
+}
+.changeColor:hover{
+    color: #F22E00;
+}
+
+.icon_right {
+    font-size: 10px;
+    margin-right: 4px;
+}
+.rightSpan {
+    margin-right: 10px;
+}
+
+// hover------------------------------
+.cnlandBox:hover {
+    background-color #fff;
+
+    &>.cnland_list {
+        display: block;
+    }
+}
+
+.cnland_list {
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    padding-top 20px
+    // margin-left 20px;
+    display: none;
+
+    &>ul {
+        width 100%
+        height 100%
+        overflow-y:auto ;
+        list-style-type:none
+
+        &>li {
+            cursor pointer
+            padding 5px
+            font-size 12px
+        }
+        li:hover {
+            background-color #F4F4F4
+        }
+    }
+}
+
+
+.mytaobao_list {
+    position absolute
+    top 30px
+    width: 100px;
+    // height: 300px;
+    background-color: #ffffff;
+    padding-top 20px
+    display: none;
+    z-index 3
+
+    &>ul {
+        width 100%
+        height 100%
+        list-style-type none
+
+        &>li {
+            cursor pointer
+            padding 5px
+            font-size 12px
+        }
+        li:hover{
+            background-color #f4f4f4
+        }
+    }
+}
+
+.mytaobaoBox:hover {
+    background-color #fff;
+
+    &>.mytaobao_list {
+        display: block;
+    }
+}
+
+
+
+.love_list {
+    position absolute
+    top 30px
+    width: 100px;
+    // height: 300px;
+    background-color: #ffffff;
+    padding-top 20px
+    display: none;
+
+    &>ul {
+        list-style-type none
+
+        &>li {
+        cursor pointer
+        padding 5px
+        font-size 12px
+        
+    }
+    li:hover{
+        background-color #f4f4f4
+    }
+    }
+    
+}
+
+.love:hover {
+    background-color #fff;
+
+    &>.love_list {
+        display block
+    }
+}
+
+
+.sell:hover {
+    background-color #fff
+
+    &>.sell_list {
+        display block
+    }
+}
+
+.sell_list {
+    position absolute
+    top 30px
+    width: 100px;
+    // height: 300px;
+    background-color: #ffffff;
+    padding-top 20px
+    display: none;
+
+    &>ul {
+        list-style-type none
+
+        &>li {
+            cursor pointer
+            padding 5px
+            font-size 12px
+        }
+        &>li:hover {
+                background-color #f4f4f4
+            }
+    }
+}
+
+.call_server:hover {
+    background-color #fff
+    &>.call_list {
+        display block
+    }
+}
+
+.call_list {
+    position absolute
+    top 30px
+    width: 100px;
+    // height: 300px;
+    background-color: #ffffff;
+    padding-top 20px
+    display: none;
+
+    &>ul {
+        list-style-type none
+
+        &>li {
+            cursor pointer
+            padding 5px
+            font-size 12px
+        }
+        &>li:hover{
+            background-color #f4f4f4
+        }
+    }
+}
+
+//网站导航
+.webnavBox:hover {
+    padding  8px 8px 8px 0px
+    // background-color #fff
+    &>.nav_list{
+        display block
+    }
+}
+.nav_list {
+    position absolute
+    left 50%
+    top 4vh
+    width 1190px
+    height 200px
+    transform translate(-50%)
+    background-color #ffffff
+    display none
+
+    &>.listBox{
+        width 100%
+        height 100%
+        display flex
+
+        &>.list1{
+            width 25%
+            height 100%
+            border 1px solid #F0F0F0
+
+            &>.title{
+                padding-top 20px
+                padding-left 20px
+                font-size 16px
+                font-weight 600
+                margin-bottom 20px
+                color #FC4200
+            }
+
+            &>.title_content{
+                &>ul{
+                    list-style-type none
+                    padding-left 20px
+                    // display flex    
+                    &>li{
+                        display inline-block
+                        width 25%
+                        height 10px
+                        margin-bottom 15px
+                        &>span{
+                            cursor pointer
+                            padding 5px
+                            border-radius 3px
+                            font-size 12px
+                            
+                        }
+                        &>span:hover {
+                            background-color #FF5500
+                        }
+                    }
+                }
+            }
+        }
+        &>.list2{
+            width 25%
+            height 100%
+            border 1px solid #F0F0F0
+
+            &>.title{
+                padding-top 20px
+                padding-left 20px
+                font-size 16px
+                font-weight 600
+                margin-bottom 20px
+                color #9FB838
+            }
+
+            &>.title_content{
+                &>ul{
+                    list-style-type none
+                    padding-left 20px
+                    // display flex    
+                    &>li{
+                        display inline-block
+                        width 33%
+                        height 10px
+                        margin-bottom 15px
+                        &>span{
+                            cursor pointer
+                            padding 5px
+                            border-radius 3px
+                            font-size 12px
+                            
+                        }
+                        &>span:hover {
+                            background-color #9FB838
+                        }
+                    }
+                }
+            }
+        }
+        &>.list3{
+            width 25%
+            height 100%
+            border 1px solid #F0F0F0
+
+            &>.title{
+                padding-top 20px
+                padding-left 20px
+                font-size 16px
+                font-weight 600
+                margin-bottom 20px
+                color #D75696
+            }
+            &>.title_content{
+                &>ul{
+                    list-style-type none
+                    padding-left 20px
+                    // display flex    
+                    &>li{
+                        display inline-block
+                        width 25%
+                        height 10px
+                        margin-bottom 15px
+                        &>span{
+                            cursor pointer
+                            padding 5px
+                            border-radius 3px
+                            font-size 12px
+                            
+                        }
+                        &>span:hover {
+                            background-color #D75696
+                        }
+                    }
+                }
+            }
+        }
+        &>.list4{
+            width 25%
+            height 100%
+            border 1px solid #F0F0F0
+
+            &>.title{
+                padding-top 20px
+                padding-left 20px
+                font-size 16px
+                font-weight 600
+                margin-bottom 20px
+                color #41A8DE
+            }
+            &>.title_content{
+                &>ul{
+                    list-style-type none
+                    padding-left 20px
+                    // display flex    
+                    &>li{
+                        display inline-block
+                        width 33%
+                        height 10px
+                        margin-bottom 15px
+                        &>span{
+                            cursor pointer
+                            padding 5px
+                            border-radius 3px
+                            font-size 12px
+                            
+                        }
+                        &>span:hover {
+                            background-color #41A8DE
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.imgBox{
+    width 100%
+    height 8vh
+    display flex
+    justify-content center
+    background-color #E71B1B
+}

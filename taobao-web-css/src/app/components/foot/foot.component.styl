@@ -1,0 +1,58 @@
+.box{
+    display flex
+    justify-content center
+    margin-top 10px
+    &>div{
+        background-color #f4f4f4
+        width 1190px
+        height 230px
+        &>.icon{
+            width 100%
+            height 50px
+            display flex
+            justify-content center
+            text-align center
+            font-size 18px
+            color #ccccd0
+        }
+        &>.icon:before{
+            content:'---------';
+            padding-right 20px;
+        }
+        &>.icon:after{
+            content:'---------';
+            padding-left 20px
+        }
+        &>.footbox{
+            width 100%
+            height 180px
+            display flex
+            padding-top 20px
+            &>div{
+                width 300px
+                height 95px
+                padding 0px 25px
+                // background-color red
+                margin 1px
+                &>:first-child{
+                    width 100%
+                    height 48px
+                    text-align center
+                    font-size 16px
+                    color #3c3c3c
+                    font-weight: bold;
+                    padding-top: 12px;
+                }
+                &>:last-child{
+                    width 100%
+                    height 42px
+                    &>span{
+                        color #999999
+                        font-size 12px
+                        padding 3px
+                    }
+                }
+            }
+        }
+    }
+}

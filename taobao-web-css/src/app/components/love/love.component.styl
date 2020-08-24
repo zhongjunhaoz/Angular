@@ -1,0 +1,103 @@
+.box{
+    display flex
+    justify-content center
+    margin-top 10px
+    &>div{
+        width 1190px
+        height 5114px
+        background-color #ffffff
+        &>.header{
+            width 100%
+            height 49px
+            // background-color red
+            display flex
+            justify-content flex-start
+            align-items center
+            &>div{
+                width 4px
+                height 16px
+                background-color #FF9F52
+                margin-left 20px
+            }
+            &>span{
+                color: #FF9F52;
+                font-size: 20px;
+                line-height: 48px;
+                margin-left 10px
+                font-family 'Hiragino Sans GB'
+            }
+        }
+        &>.body{
+            height 5065px
+            width 100%
+            display flex
+            flex-direction row
+            flex-wrap wrap
+            &>.goodsbox{
+                width 238px
+                height 350px
+                border-top 1px solid #f4f4f4
+                border-right 1px solid #f4f4f4
+                border-buttom 1px solid #f4f4f4
+                border-left 1px solid #f4f4f4
+                background-color #fff
+                cursor pointer
+                &>div{
+                    position relative
+                    &>.dec{
+                        height: 40px;
+                        line-height: 20px;
+                        overflow: hidden;
+                        margin: 10px 0;
+                        color: #666;
+                        font-size: 14px;
+                        text-align center
+                    }
+                    &>.hoverlove{
+                        position absolute
+                        top 210px
+                        width 100%
+                        height 120px
+                        background-color #FF5000
+                        z-index 3
+                        display none
+                        &>:first-child{
+                            position absolute
+                            left 50%
+                            transform translate(-35%)
+                            width 50%
+                            color #fff
+                            font-size 18px
+                            top 30px
+                        }
+                        &>.line{
+                            width 50%
+                            position absolute
+                            transform translate(45%)
+                            height 1px
+                            background-color #fff
+                            top 60px
+                        }
+                        &>.find{
+                            position absolute
+                            left 45%
+                            transform translate(-35%)
+                            width 60%
+                            color #fff
+                            font-size 10px
+                            top 70px
+                        }
+                    }
+                }
+            }
+            &>.goodsbox:hover{
+                border 1px solid #FF5000
+                &>div{
+                    &>.hoverlove{
+                        display block
+                    }
+                }
+            }
+        }
+    }
+}

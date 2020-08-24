@@ -1,0 +1,105 @@
+.headerBox
+    display flex
+    justify-content center
+    .header
+        width 1190px
+        height 12vh
+        background-color #ffffff
+        display flex
+
+        &>.icon
+            width 25%
+            height 100%
+            display flex
+            justify-content center
+            align-items center
+            &>img
+                width 50%
+                height 50%
+        &>.input
+            width 50%
+            height 100%
+            display flex
+            flex-direction column
+            justify-content center
+            &>.textBox
+                &>span
+                    color #000000
+                    font-size 12px
+                    padding 5px
+            &>.top
+                padding-left 20px
+                &>span 
+                    text-align: center;
+                    float: left;
+                    width: 36px;
+                    height: 22px;
+                    line-height: 22px;
+                    margin-right: 4px;
+                    cursor: pointer;
+                &>.toptext
+                    background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+                    border-top-right-radius: 6px;
+                    border-top-left-radius: 6px;
+                    color: #FFF;
+                    font-weight: 700;
+            &>.inputText
+                display flex
+                &>button
+                    background-color #FF8400
+                    color #ffffff
+                    border-radius 0px 50px 50px 0px
+                    width 80px
+                    font-size: 18px;
+                    font-weight: 700;
+                    background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+                    background-repeat: repeat-x;
+        &>.erweima
+            width 25%
+            height 100%
+            display flex
+            justify-content center
+            padding-top 20px
+
+            &>.left
+                padding 1px
+                border 1px solid #eeeeee
+                width 14px
+                height 20px
+                font-size 12px
+                &>p
+                    width 100%
+                    height 100%
+                    // margin-bottom 5px
+
+            &>.right
+                padding 10px 10px 10px 10px
+                border 1px solid #EEEEEE
+                width 74px
+                height 88px
+                display flex
+                flex-direction column
+                &>.right_top
+                    color #FF5000
+                    font-size 12px
+                    display flex
+                    justify-content center
+                    align-items center
+                &>.right_buttom
+                    display flex
+                    justify-content center
+                    align-items center
+                    &>div
+                        width 62px
+                        height 62px
+                    
+.ant-input-affix-wrapper {
+    border-radius 50px 0 0 50px
+    padding 6px
+    display flex
+    align-items center
+    border-top 2px solid #FF5101
+    border-bottom 2px solid #FF5101
+    border-left 2px solid #FF5101
+    border-right 0px
+}
